@@ -1,0 +1,15 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/contactUs.js');
+        assets.addCss('/css/contactUs.css');
+    </isscript>
+
+    <div class="hero slant-down contact-us-banner">
+        <h1 class="page-title">${Resource.msg('title', 'loyality', null)}</h1>
+    </div>
+
+    <div class="container contact-us-landing-page">
+
+    </div>
+</isdecorate>
