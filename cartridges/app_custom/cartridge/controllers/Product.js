@@ -44,10 +44,10 @@ server.append('Show', function (req, res, next) {
   var customer = req.currentCustomer.raw;
   var isAvailable = checkLoyaltyAvailability(product, customer);
 
-  if (!isAvailable) {
-    res.setStatusCode(404);
-    res.render('error/notFound');
-  }
+  // if (!isAvailable) {
+  //   res.setStatusCode(404);
+  //   res.render('error/notFound');
+  // }
 
   next();
 });
