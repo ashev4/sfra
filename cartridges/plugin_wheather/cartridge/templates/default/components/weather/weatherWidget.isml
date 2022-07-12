@@ -1,0 +1,1 @@
+<p>${Resource.msg('title', 'weather', null)}: ${pdict.temp}</p>
