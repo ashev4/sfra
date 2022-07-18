@@ -3,11 +3,10 @@ var LocalServiceRegistry = require("dw/svc/LocalServiceRegistry");
 var weatherAPIService = LocalServiceRegistry.createService("Weather.Service", {
   createRequest: function (service, params) {
     var apiKey = service.getConfiguration().getCredential().getPassword();
-    service.setRequestMethod("GET");
-    service.addHeader("Accept", "application/json");
     service.setAuthentication("NONE");
-    service.addParam("lon", "49.43771188816319");
-    service.addParam("lat", "26.96915895669814");
+    service.addParam("units", "metric");
+    service.addParam("lon", "49.8397");
+    service.addParam("lat", "24.0297");
     service.addParam("appid", apiKey);
 
     return params;
