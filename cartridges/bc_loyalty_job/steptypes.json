@@ -1,0 +1,33 @@
+{
+  "step-types": {
+    "script-module-step": [
+      {
+        "@type-id": "custom.ExportsLoyaltyProducts",
+        "@supports-parallel-execution": "true",
+        "@supports-site-context": "true",
+        "@supports-organization-context": "true",
+        "description": "This script exports loyalty products in a CSV format.",
+        "module": "bc_loyalty_job/cartridge/scripts/job/loyaltyJob.js",
+        "function": "exportProducts",
+        "transactional": "false",
+        "timeout-in-seconds": "900",
+        "status-codes": {
+          "status": [
+            {
+              "@code": "ERROR",
+              "description": "Used when the step failed with an error."
+            },
+            {
+              "@code": "FINISHED",
+              "description": "Used when the step finished successfully."
+            },
+            {
+              "@code": "FINISHED_WITH_WARNINGS",
+              "description": "Used when the step finished with warnings."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
