@@ -1,0 +1,10 @@
+{
+  "caches": [
+    {
+      "id": "WeatherCache",
+      "expireAfterSeconds": 86400,
+      "lat": "24.0297",
+      "lon": "49.8397"
+    }
+  ]
+}
